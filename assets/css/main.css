@@ -3476,10 +3476,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, #90d5ff, #90d5ff), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, #90d5ff, #90d5ff), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, #90d5ff, #90d5ff), url("images/overlay.png");;
-			background-image: linear-gradient(to bottom, #90d5ff, #90d5ff), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, #def3fd, #def3fd), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, #def3fd, #def3fd), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, #def3fd, #def3fd), url("images/overlay.png");;
+			background-image: linear-gradient(to bottom, #def3fd, #90d5ff), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3506,6 +3506,7 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
+					color: rgb(0, 0, 0);
 					font-size: 2.5em;
 					margin: 0;
 				}
@@ -3513,6 +3514,9 @@ input, select, textarea {
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+				}
+				#banner .tagline {
+					color: black;
 				}
 
 			#banner .content .image {
@@ -3751,6 +3755,7 @@ input, select, textarea {
 /* Small */
 
 	#navPanel, #titleBar {
+		color: black;
 		display: none;
 	}
 
@@ -3897,7 +3902,7 @@ input, select, textarea {
 			}
 
 				#titleBar .title {
-					color: #ffffff;
+					color: #000000;
 					display: block;
 					font-weight: 300;
 					height: 44px;
@@ -3906,7 +3911,7 @@ input, select, textarea {
 				}
 
 					#titleBar .title a {
-						color: inherit;
+						color: #000000;
 						border: 0;
 					}
 
@@ -3972,12 +3977,13 @@ input, select, textarea {
 				z-index: 10002;
 				background: #181920;
 				padding: 0.75em 1.25em;
+				color: black;
 			}
 
 				#navPanel .link {
 					border: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					color: rgba(255, 255, 255, 0.75);
+					color: black;
 					display: block;
 					height: 3em;
 					line-height: 3em;
@@ -3985,41 +3991,51 @@ input, select, textarea {
 				}
 
 					#navPanel .link:hover {
-						color: inherit !important;
+						color: black;
 					}
-
+				
 					#navPanel .link:first-child {
+						color: black;
 						border-top: 0;
 					}
 
 					#navPanel .link.depth-0 {
-						color: #ffffff;
+						color: black;
 						font-weight: 300;
 					}
 
 					#navPanel .link .indent-1 {
+						color: black;
 						display: inline-block;
 						width: 1.25em;
 					}
 
 					#navPanel .link .indent-2 {
+						color: black;
 						display: inline-block;
 						width: 2.5em;
 					}
 
 					#navPanel .link .indent-3 {
+						color: black;
 						display: inline-block;
 						width: 3.75em;
 					}
 
 					#navPanel .link .indent-4 {
+						color: black;
 						display: inline-block;
 						width: 5em;
 					}
 
 					#navPanel .link .indent-5 {
+						color: black;
 						display: inline-block;
 						width: 6.25em;
+					}
+					#nav ul li a {
+						color: black; /* Set the link text color to black */
+						text-decoration: none; /* Optional: Remove underlines */
 					}
 
 			body.navPanel-visible #page-wrapper {
@@ -4030,6 +4046,7 @@ input, select, textarea {
 			}
 
 			body.navPanel-visible #titleBar {
+				color: black;
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
@@ -4037,6 +4054,7 @@ input, select, textarea {
 			}
 
 			body.navPanel-visible #navPanel {
+				color: black;
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
